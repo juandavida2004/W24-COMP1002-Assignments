@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my lab 3 assignment in the HTML class'">
+    <meta name="keywords" content="HTML, Class">
+
+    <!-- Title -->
+    <title>Lab 3 - Form</title>
+
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1 class="title">Lab 3 - Juan David Navarro</h1>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+
+            <form name="myform" action="order.php" method="get">
+                <fieldset>
+                    <legend>This is my first FORM</legend>
+                    <label for="firstinput">Name</label>
+                    <input type="text" name="firstinput" id="firstinput"><br>
+                    <label for="secondinput">Email:</label>
+                    <input type="email" name="secondinput" id="secondinput">
+                </fieldset><br>
+                <fieldset>
+                    <legend>My review</legend>
+                    <label for="firstinput">How did you heard about us:</label>
+                    <select name="firstselect" id="firstselect">
+                        <option value="Google">Google</option>
+                        <option value="Magazines">Magazines</option>
+                        <option value="Friends">Friends</option>
+                    </select>
+                    <p class="firstp">Would you visit again:</p>
+                    <input type="radio" name="answer" id="radioquestion1" value="yes"><label for="radioquestion1">Yes</label>
+                    <input type="radio" name="answer" id="radioquestion2" value="no" ><label for="radioquestion2">No</label>
+                    <input type="radio" name="answer" id="radioquestion3" value="maybe"><label for="radioquestion3">Maybe</label>
+                    <p class="secondp">Coments:</p>
+                    <textarea rows="3" cols="100" name="comments" placeholder=""></textarea><br>
+                    <input type="checkbox" name="sinmeup" id="checkboxquestion" value="yes"><label for="checkboxquestion">Sing me up for email address</label><br>
+                    <button type="submit" class="button">Submit Review</button>
+                </fieldset>
+            </form>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p class="copyright">&copy; Juan David Navarro - 2024</p>
+    </footer>
+    
+</body>
+</html>

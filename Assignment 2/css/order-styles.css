@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;400;600;800&display=swap');
+* { 
+	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+ 	font-family: 'Hanken Grotesk', sans-serif;
+ 	text-decoration: none;
+ 	list-style: none;
+ 	line-height: 1.1;
+ 	outline: none;
+ }
+
+/* main */
+.main {
+	margin-top: 100px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-form {
+    width: 100%;
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ED4E53;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: red;
+}
+
+.footer {
+	text-align: center;
+	background: #000;
+	color: #fff;
+	padding: 20px;
+}

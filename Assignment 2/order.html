@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="jd, jd's pizza, pizza, barrie, simcoe, simcoe lake, order, order pizza">
+	<meta name="description" content="Jd's pizza is the best imaginary pizza around the simcoe lake.">
+	<meta name="robots"       content="index">
+ 	<meta name="author"       content="Juan David Navarro - 200584021">
+
+ 	<!-- styles -->
+ 	<link rel="icon" href="imagenes/logo.png" type="png">
+ 	<link rel="stylesheet" type="text/css" href="css/order-styles.css">
+ 	<link rel="stylesheet" href="css/header-styles.css" type="text/css">
+
+ 	<!-- Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" type="text/css">
+
+ 	<!-- title -->
+	<title>JD's Pizza | Order</title>
+</head>
+<body>
+
+	<header class="header" id="header">
+		<nav class="nav">
+			<input type="checkbox" id="check" class="nav__input">
+			<label for="check" class="nav__bottom"> <i class="fa-solid fa-bars"></i></label>
+			<a href="#" class="nav__logo-link"> <img src="images/logo.png" class="nav__logo-image" alt="JD's pizzeria logo"> </a>
+			<ul class="nav__options-container">
+				<li class="nav__page-option"><a href="index.html" class="nav__page-link">Home</a></li>
+				<li class="nav__page-option"><a href="index.html#menu" class="nav__page-link">Menu</a></li>
+				<li class="nav__page-option nav__page-option--active"><a href="order.html" class="nav__page-link nav__page-link--active">Order</a></li>
+				<li class="nav__page-option"><a href="order.html" class="nav__page-link">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="main" id="main">
+	    <form class="main-form" name="myform" action="order.php" method="POST">
+            <fieldset>
+                <legend>Contact Information:</legend>
+                <label for="firstinput">Name</label>
+                <input type="text" name="firstinput" id="firstinput"><br>
+                <label for="secondinput">Email:</label>
+                <input type="email" name="secondinput" id="secondinput">
+                <label for="secondinput">Phone Number:</label>
+                <input type="number" name="thirdinput" id="thirdinput">
+            </fieldset><br>
+            <fieldset>
+                <legend>Pizza Details</legend>
+                <label for="firstinput">Pizza Type:</label>
+                <select name="firstselect" id="firstselect">
+                    <option value="Italian Pizza">Italian Pizza</option>
+                    <option value="Pepperoni Pizza">Pepperoni Pizza</option>
+                    <option value="Mediterranean Pizza">Mediterranean Pizza</option>
+                    <option value="Hawaiana Pizza">Hawaiana Pizza</option>
+                    <option value="Meat Pizza">Meat Pizza</option>
+                </select>
+                <p class="firstp">Size:</p><br>
+                <input type="radio" name="answer" id="radioquestion1" value="small"><label for="radioquestion1">Small</label><br>
+                <input type="radio" name="answer" id="radioquestion2" value="medium" ><label for="radioquestion2">Medium</label><br>
+                <input type="radio" name="answer" id="radioquestion3" value="large"><label for="radioquestion3">Large</label><br><br>
+                <p class="secondp">toppings:</p><br>
+               	<input type="checkbox" name="pepperoni" id="checkboxquestion1" value="pepperoni"><label for="checkboxquestion1">Pepperoni</label><br>
+               	<input type="checkbox" name="cheese" id="checkboxquestion2" value="cheese"><label for="checkboxquestion2">Cheese</label><br>
+               	<input type="checkbox" name="fries" id="checkboxquestion3" value="fries"><label for="checkboxquestion3">Fries</label><br><br>
+               	<label for="textarea">Additional Instructions:</label>
+                <textarea rows="3" cols="100" name="comments" id="textarea" placeholder=""></textarea><br>
+            </fieldset>
+            <fieldset>
+                <legend>Delivery Options:</legend>
+                <label for="textarea2">Delivery Address:</label>
+                <textarea id="textarea2" rows="3" cols="100" name="address" placeholder=""></textarea><br>
+                <label for="textarea3">Delivery Time:</label>
+                <textarea id="textarea3" rows="3" cols="100" name="instructions"  placeholder=""></textarea><br>
+            </fieldset>
+                <button type="submit" class="button">Submit Order</button>
+        </form>
+	</main>
+	<footer class="footer">
+		Copyright © 2023 | Juan David Navarro | All rights reserved
+	</footer>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lab 04 | Html, Css & Js</title>
+	<style>
+		/* span { color: red; } */
+	</style>
+</head>
+<body>
+	<h1>Lab 4</h1>
+	<p id="result"></p>
+	<script>
+		const output = document.getElementById("result");
+		let repeat;
+		do {
+			let i = 1;
+			let sum = 0;
+			let num = parseInt(prompt("Enter an integer number", 100));
+			while( i <= num ) {
+	           sum += i;
+	           i++;
+			}
+			//document.write(`The sum is (1-${num}): <b> <span> ${sum} </span> </b><br>`);
+			output.innerHTML += `The sum is (1-${num}): <b> <span id="sp1">${sum}</span></b><br>`;
+			document.getElementById('sp1').style.color = "blue";
+			repeat = prompt("Do you want to repeat (Y/N) ?", "Y");
+		} while (repeat == "Y")
+	</script>
+</body>
+</html>	
